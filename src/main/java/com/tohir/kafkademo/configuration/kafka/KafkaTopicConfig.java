@@ -14,5 +14,10 @@ public class KafkaTopicConfig {
     public NewTopic topicLogs() {
         return TopicBuilder.name(KafkaConstants.TOPIC_LOGS).partitions(3).replicas(1).build();
     }
+
+    @Bean
+    public NewTopic topicLogsJson() {
+        return TopicBuilder.name(KafkaConstants.TOPIC_LOGS_JSON).build();
+    }
     
 }

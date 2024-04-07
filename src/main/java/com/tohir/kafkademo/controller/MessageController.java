@@ -25,6 +25,5 @@ public class MessageController {
         kafkaProducer.sendMessage(KafkaConstants.TOPIC_LOGS, LocalDateTime.now().toString(), message);
         return ResponseEntity.ok("Message sent to the Topic!!!");
     }
-
     
 }

@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class KafkaConstants {
     public static final String TOPIC_LOGS = "logs";
+    public static final String TOPIC_LOGS_JSON = "logs_json";
     public static final String TOPIC_TEST = "test";
-    public static final String GROUP_ID = "${spring.kafka.consumer.group-id}";
 
 }
